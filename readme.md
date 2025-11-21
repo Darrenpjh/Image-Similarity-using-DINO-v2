@@ -7,7 +7,6 @@ A professional, engineering-friendly dashboard for searching image similarity wi
 
 ## Project Structure
 
-```
 Similarity/
 ├── dinov2-base/           # DINOv2 model files/config
 │   ├── config.json
@@ -16,9 +15,9 @@ Similarity/
 │   └── README.md
 ├── images/                # Your image data
 ├── qdrant_storage/        # Local Qdrant vector DB
-│   └── collection/image_vectors/
-│        ├── storage.sqlite
-│        └── .lock
+│   ├── collection/image_vectors/
+│   │   ├── storage.sqlite
+│   │   └── .lock
 │   └── meta.json
 ├── static/
 │   ├── script.js          # JS (image selection logic)
@@ -32,7 +31,6 @@ Similarity/
 ├── embeddings.npy         # (optional) Saved vectors
 ├── img_paths.txt          # (optional) Paths reference
 └── readme.md              # Project docs (this file)
-```
 
 ---
 
@@ -111,4 +109,5 @@ Open your browser and visit: [http://localhost:8501](http://localhost:8501)
 - **Flask / Bootstrap** – Web dashboard framework  
 
 ---
+
 ```
