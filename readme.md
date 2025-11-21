@@ -50,7 +50,7 @@ Similarity/
 
 1. Install Python 3.8+  
 2. Install dependencies:
-
+3. Go to https://huggingface.co/facebook/dinov2-base/tree/main to download the model files
 ```bash
 pip install flask pillow qdrant-client torch transformers
 ```
@@ -111,4 +111,5 @@ Open your browser and visit: [http://localhost:8501](http://localhost:8501)
 ---
 
 ```
+
 
