@@ -1,5 +1,5 @@
 
-# Similarity Image Search App
+# Similarity Image Search App with local vector db (in memory)
 
 A professional, engineering-friendly dashboard for searching image similarity with deep learning (DINOv2) and vector database (Qdrant), featuring an interactive web app and batch download tools.
 
@@ -111,5 +111,6 @@ Open your browser and visit: [http://localhost:8501](http://localhost:8501)
 ---
 
 ```
+
 
 
