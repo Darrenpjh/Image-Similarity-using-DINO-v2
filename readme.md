@@ -1,4 +1,4 @@
-```markdown
+
 # Similarity Image Search App
 
 A professional, engineering-friendly dashboard for searching image similarity with deep learning (DINOv2) and vector database (Qdrant), featuring an interactive web app and batch download tools.
@@ -6,7 +6,7 @@ A professional, engineering-friendly dashboard for searching image similarity wi
 ---
 
 ## Project Structure
-
+```
 Similarity/
 ├── dinov2-base/           # DINOv2 model files/config
 │   ├── config.json
@@ -31,7 +31,7 @@ Similarity/
 ├── embeddings.npy         # (optional) Saved vectors
 ├── img_paths.txt          # (optional) Paths reference
 └── readme.md              # Project docs (this file)
-
+```
 ---
 
 ## Features
@@ -111,3 +111,4 @@ Open your browser and visit: [http://localhost:8501](http://localhost:8501)
 ---
 
 ```
+
