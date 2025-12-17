@@ -142,4 +142,5 @@ Open your browser and visit: [http://localhost:8501](http://localhost:8501)
 
 ## Contributing
 
-By FA-Lab Darren (Intern 2025)
+By Darren 
+
