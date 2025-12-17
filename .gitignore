@@ -1,23 +1,64 @@
-# Ignore node_modules folder (for Node.js projects)
+# Node.js
 node_modules/
 
-# Ignore compiled Python files
+# Python
 __pycache__/
 *.pyc
+*$py.class
 
-# Ignore OS files
+# OS files
 .DS_Store
 Thumbs.db
 
-# Ignore log files
+# Logs
 *.log
+*.tmp
+*.temp
 
-# Ignore environment variables files
+# Environment variables and virtual envs
 .env
+.venv/
+venv/
+env/
+env.bak/
+ENV/
 
-# Ignore images
+# Jupyter
+.ipynb_checkpoints/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Ignore images folder (if not versioning raw images)
 images/
 
-# Ignore Embeddings & imagepath
+# Embeddings & image paths
 embeddings.npy
-imag_paths.txt
+img_paths.txt
+
+# Qdrant local storage (ignore all inside recursively)
+qdrant_storage/**
+
+# SQLite and lock files
+*.sqlite
+*.lock
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Batch downloads or outputs
+downloads/
+output/
+*.zip
+
+# DINOv2 model files
+dinov2-base/
+
+# Pytest cache
+.pytest_cache/

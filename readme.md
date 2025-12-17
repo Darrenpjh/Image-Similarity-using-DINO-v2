@@ -1,5 +1,5 @@
 
-# Similarity Image Search App with local vector db (in memory)
+# Similarity Image Search App
 
 A professional, engineering-friendly dashboard for searching image similarity with deep learning (DINOv2) and vector database (Qdrant), featuring an interactive web app and batch download tools.
 
@@ -48,14 +48,44 @@ Similarity/
 
 ## Installation
 
-1. Install Python 3.8+  
-2. Install dependencies:
-3. Go to https://huggingface.co/facebook/dinov2-base/tree/main to download the model files
-```bash
-pip install flask pillow qdrant-client torch transformers
-```
+1. Install Python 3.8 or higher (if not already installed).
 
----
+2. Create and activate a virtual environment (recommended):
+
+On Windows (PowerShell):
+
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+On Windows (Command Prompt):
+
+```cmd
+python -m venv venv
+venv\Scripts\activate.bat
+```
+On Linux/macOS:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+3. Install required Python packages inside the virtual environment:
+
+```bash
+pip install --upgrade pip
+pip install flask pillow qdrant-client torch transformers tqdm
+```
+4. Download DINOv2 model files from DINOv2 base model on Hugging Face and place them in the dinov2-base/ folder. (https://huggingface.co/facebook/dinov2-base/tree/main)
+
+Notes:
+Using a virtual environment keeps your project dependencies isolated from system-wide Python packages.
+
+To deactivate the virtual environment, simply run:
+
+```bash
+deactivate
+```
 
 ## Getting Started
 
@@ -110,7 +140,6 @@ Open your browser and visit: [http://localhost:8501](http://localhost:8501)
 
 ---
 
-```
+## Contributing
 
-
-
+By FA-Lab Darren (Intern 2025)

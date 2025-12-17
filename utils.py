@@ -2,6 +2,7 @@ import os
 from PIL import Image as PILImage
 from transformers import AutoImageProcessor, AutoModel
 import torch
+import numpy as np 
 
 MODEL_DIR = "./dinov2-base"
 
@@ -22,8 +23,14 @@ def compute_embedding(img_input, processor, model, device):
         img = img_input.convert('RGB')
     else:
         raise TypeError(f"img_input must be a file path or PIL.Image.Image, got {type(img_input)}")
+
     inputs = processor(images=img, return_tensors="pt").to(device)
     with torch.no_grad():
         feature = model(**inputs).last_hidden_state.mean(dim=1).cpu().numpy().squeeze()
-    return feature.tolist()
 
+    # L2-normalize for cosine similarity
+    norm = np.linalg.norm(feature)
+    if norm > 0:
+        feature = feature / norm
+
+    return feature.tolist()
